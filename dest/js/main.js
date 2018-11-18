@@ -1,0 +1,1 @@
+var something="something";function alertSomething(par){alert(par)}console.log(something),alertSomething(something);
