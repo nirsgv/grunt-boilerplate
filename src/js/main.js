@@ -2,8 +2,8 @@ var something = 'something';
 
 console.log(something);
 
-function alertSomething(par){
-    alert(par);
+function consoleLogSomething(par){
+    console.log(par);
 }
 
-alertSomething(something);
+consoleLogSomething(something);

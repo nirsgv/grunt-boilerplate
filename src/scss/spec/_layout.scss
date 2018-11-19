@@ -1,3 +1,13 @@
 body {
+  height: 0;
   position: relative;
+}
+h1{
+  &:focus {
+    border: 1px solid red;
+    outline: 0;
+  }
+}
+* a{
+  color: black;
 }
