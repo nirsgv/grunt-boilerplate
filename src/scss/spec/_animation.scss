@@ -1,0 +1,9 @@
+body {
+  animation-name: color-change;
+  animation-duration: 1s;
+}
+@keyframes color-change {
+  0% {background-color: red;}
+  50% {background-color: yellow;}
+  100% {background-color: red;}
+}

@@ -76,6 +76,17 @@ grunt.initConfig({
             }]
         },
     },
+    sass: {                              // Task
+        dist: {                            // Target
+            options: {                       // Target options
+                style: 'compressed', // Output style. Can be nested, compact, compressed, expanded.
+                trace: true, // Output style. Can be nested, compact, compressed, expanded.
+            },
+            files: {                         // Dictionary ozzf files
+                'src/css/main.css': 'src/scss/style.scss'      // 'destination': 'source'
+            }
+        }
+    },
 });
 
 
@@ -85,9 +96,11 @@ grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-htmlhint');
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
+grunt.loadNpmTasks('grunt-contrib-sass');
+
 // register tasks
 grunt.registerTask('default', [
-        'clean', 'jshint', 'uglify', 'htmlhint', 'htmlmin'
+        'clean', 'jshint', 'uglify', 'htmlhint', 'htmlmin', 'sass'
     ]
 );
 
